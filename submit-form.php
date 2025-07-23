@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $to = "owner@example.com"; // Replace with owner's email
+  $to = "kabhinit@emazetechnologies.com"; // Replace with owner's email
   $subject = "New Form Submission - 2025 Guide";
   $message = "First Name: " . $_POST["first_name"] . "\n"
            . "Last Name: " . $_POST["last_name"] . "\n"
