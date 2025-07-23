@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | YourBrand</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/include.js" defer></script>
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+        .form-input {
+            @apply w-full px-4 py-3 rounded-md border border-gray-300 focus: outline-none focus:ring-2 focus:ring-blue-500;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+
+
+    <!-- Hero Banner -->
+    <section class="relative h-[50vh] bg-cover bg-center flex items-center justify-center text-white"
+        style="background-image: url('images/about-hero.jpg');">
+        <div class="bg-black/50 absolute inset-0"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold">About Us</h1>
+            <p class="mt-4 text-xl md:text-2xl">Shaping the Future of Technology</p>
+        </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
+            <div class="md:w-1/2">
+                <img src="images/mission.jpg" alt="Our Mission" class="rounded-lg shadow-lg w-full" />
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    We are on a mission to drive the world’s transition to sustainable digital manufacturing. Our
+                    solutions unlock productivity gains, reduce waste, and bring ideas to life with speed and precision.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Vision -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto flex flex-col md:flex-row-reverse items-center gap-10 px-6">
+            <div class="md:w-1/2">
+                <img src="images/vision.jpg" alt="Our Vision" class="rounded-lg shadow-lg w-full" />
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Vision</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    We envision a world where rapid manufacturing meets high-performance materials, creating new
+                    possibilities in every industry through reliable, scalable, and sustainable innovation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Board Members -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12">Meet Our Board</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Member 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+                    <img src="images/board1.jpg" alt="Board Member"
+                        class="w-32 h-32 mx-auto rounded-full mb-4 object-cover" />
+                    <h4 class="text-xl font-semibold">John Doe</h4>
+                    <p class="text-gray-500 text-sm">CEO & Founder</p>
+                </div>
+                <!-- Member 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+                    <img src="images/board2.jpg" alt="Board Member"
+                        class="w-32 h-32 mx-auto rounded-full mb-4 object-cover" />
+                    <h4 class="text-xl font-semibold">Jane Smith</h4>
+                    <p class="text-gray-500 text-sm">CTO</p>
+                </div>
+                <!-- Member 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+                    <img src="images/board3.jpg" alt="Board Member"
+                        class="w-32 h-32 mx-auto rounded-full mb-4 object-cover" />
+                    <h4 class="text-xl font-semibold">Michael Brown</h4>
+                    <p class="text-gray-500 text-sm">COO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Us in Building the Future</h2>
+            <p class="text-gray-600 text-lg mb-6">Explore opportunities to collaborate, innovate, and create impact with
+                us.</p>
+            <a href="/contact"
+                class="inline-block text-white bg-blue-600 hover:bg-blue-700 font-semibold px-6 py-3 rounded-full transition">Contact
+                Us</a>
+        </div>
+    </section>
+
+
+    <div id="footer-container"></div>
+
+</body>
+
+</html>
