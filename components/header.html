@@ -1,0 +1,145 @@
+<!-- components/header.html -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <!-- Logo -->
+    <a href="/" class="flex items-center space-x-2">
+      <img src="/images/logo.png" alt="Logo" class="h-8 w-auto">
+      <span class="font-bold text-xl text-gray-800">YourBrand</span>
+    </a>
+
+    <!-- Hamburger Icon -->
+    <div class="md:hidden">
+      <button id="hamburger" class="focus:outline-none">
+        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav-menu" class="hidden md:flex md:items-center space-x-6">
+      <div class="relative group">
+        <button class="text-gray-700 hover:text-blue-600">3D Printers</button>
+        <div
+          class="absolute left-0 top-full  w-40 bg-white shadow-md rounded hidden group-hover:block">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">NX Printer</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Pro Printer</a>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="text-gray-700 hover:text-blue-600">Materials</button>
+        <div
+          class="absolute left-0 top-full  w-40 bg-white shadow-md rounded hidden group-hover:block">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Resins</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Filaments</a>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="text-gray-700 hover:text-blue-600">Software</button>
+        <div
+          class="absolute left-0 top-full  w-40 bg-white shadow-md rounded hidden group-hover:block">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">NX Studio</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Cloud Sync</a>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="text-gray-700 hover:text-blue-600">Explore</button>
+        <div
+          class="absolute left-0 top-full  w-40 bg-white shadow-md rounded hidden group-hover:block">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Gallery</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Case Studies</a>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="text-gray-700 hover:text-blue-600">About</button>
+        <div
+          class="absolute left-0 top-full  w-40 bg-white shadow-md rounded hidden group-hover:block">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Company</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Team</a>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="text-gray-700 hover:text-blue-600">Support</button>
+        <div
+          class="absolute left-0 top-full  w-40 bg-white shadow-md rounded hidden group-hover:block">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Help Center</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Downloads</a>
+        </div>
+      </div>
+
+      <a href="#" class="text-gray-700 hover:text-blue-600">Store</a>
+
+      <a href="#"
+        class="ml-4 px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 font-semibold">
+        Find a Reseller
+      </a>
+    </nav>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu"
+    class="md:hidden hidden px-4 pb-4 bg-white shadow space-y-2 transition-all duration-300">
+    <div class="space-y-1">
+      <details>
+        <summary class="cursor-pointer text-gray-700">3D Printers</summary>
+        <div class="pl-4">
+          <a href="#" class="block py-1">NX Printer</a>
+          <a href="#" class="block py-1">Pro Printer</a>
+        </div>
+      </details>
+
+      <details>
+        <summary class="cursor-pointer text-gray-700">Materials</summary>
+        <div class="pl-4">
+          <a href="#" class="block py-1">Resins</a>
+          <a href="#" class="block py-1">Filaments</a>
+        </div>
+      </details>
+
+      <details>
+        <summary class="cursor-pointer text-gray-700">Software</summary>
+        <div class="pl-4">
+          <a href="#" class="block py-1">NX Studio</a>
+          <a href="#" class="block py-1">Cloud Sync</a>
+        </div>
+      </details>
+
+      <details>
+        <summary class="cursor-pointer text-gray-700">Explore</summary>
+        <div class="pl-4">
+          <a href="#" class="block py-1">Gallery</a>
+          <a href="#" class="block py-1">Case Studies</a>
+        </div>
+      </details>
+
+      <details>
+        <summary class="cursor-pointer text-gray-700">About</summary>
+        <div class="pl-4">
+          <a href="#" class="block py-1">Company</a>
+          <a href="#" class="block py-1">Team</a>
+        </div>
+      </details>
+
+      <details>
+        <summary class="cursor-pointer text-gray-700">Support</summary>
+        <div class="pl-4">
+          <a href="#" class="block py-1">Help Center</a>
+          <a href="#" class="block py-1">Downloads</a>
+        </div>
+      </details>
+
+      <a href="#" class="block py-1 text-gray-700">Store</a>
+
+      <a href="#" class="block py-2 mt-2 text-center rounded-full bg-blue-600 text-white font-semibold">
+        Find a Reseller
+      </a>
+    </div>
+  </div>
+</header>
