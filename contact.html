@@ -23,50 +23,84 @@
 
 
     <!-- Contact Hero Section -->
-  <section class="py-16 bg-white text-center">
-    <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
-    <p class="text-lg text-blue-600 font-medium">We’re here to help — let’s get in touch!</p>
-  </section>
+    <section class="py-16 bg-white text-center">
+        <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+        <p class="text-lg text-blue-600 font-medium">We’re here to help — let’s get in touch!</p>
+    </section>
 
-  <!-- Contact Info Section -->
-  <section class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
-    
-    <!-- Get in Touch -->
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
-      <h2 class="text-2xl font-semibold mb-4">Talk to Sales</h2>
-      <p class="mb-4 text-sm text-gray-600">Have questions about our 3D printers? Reach out and we’ll guide you through.</p>
-      <div class="text-sm space-y-2">
-        <p><span class="font-semibold">Phone:</span> +1 (415) 123-4567</p>
-        <p><span class="font-semibold">Email:</span> sales@yourbrand.com</p>
-        <p><span class="font-semibold">Asia:</span> asia.sales@yourbrand.com</p>
-      </div>
-    </div>
+    <!-- Contact Info Section -->
+    <section class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
 
-    <!-- Customer Support -->
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
-      <h2 class="text-2xl font-semibold mb-4">Customer Support</h2>
-      <p class="mb-4 text-sm text-gray-600">Already a customer? Submit a support ticket and we’ll help you resolve your issue fast.</p>
-      <a href="/support" class="inline-block px-5 py-2 mt-2 text-blue-600 border border-blue-600 rounded hover:bg-blue-600 hover:text-white transition">
-        Create Support Ticket
-      </a>
-    </div>
+        <!-- Get in Touch -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+            <h2 class="text-2xl font-semibold mb-4">Talk to Sales</h2>
+            <p class="mb-4 text-sm text-gray-600">Have questions about our 3D printers? Reach out and we’ll guide you
+                through.</p>
+            <div class="text-sm space-y-2">
+                <p><span class="font-semibold">Phone:</span> +1 (415) 123-4567</p>
+                <p><span class="font-semibold">Email:</span> sales@yourbrand.com</p>
+                <p><span class="font-semibold">Asia:</span> asia.sales@yourbrand.com</p>
+            </div>
+        </div>
 
-    <!-- Our Offices -->
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
-      <h2 class="text-2xl font-semibold mb-4">Our Locations</h2>
-      <div class="mb-4">
-        <p class="font-bold">US Headquarters</p>
-        <p class="text-sm text-gray-600">742 Evergreen Terrace<br>Springfield, IL 62704</p>
-        <a href="#" class="text-sm text-blue-500 hover:underline">Map location</a>
-      </div>
-      <div>
-        <p class="font-bold">Europe Office</p>
-        <p class="text-sm text-gray-600">21 Oxford Street<br>London, UK W1D 2LF</p>
-        <a href="#" class="text-sm text-blue-500 hover:underline">Map location</a>
-      </div>
-    </div>
+        <!-- Customer Support -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+            <h2 class="text-2xl font-semibold mb-4">Customer Support</h2>
+            <p class="mb-4 text-sm text-gray-600">Already a customer? Submit a support ticket and we’ll help you resolve
+                your issue fast.</p>
+            <a href="/support"
+                class="inline-block px-5 py-2 mt-2 text-blue-600 border border-blue-600 rounded hover:bg-blue-600 hover:text-white transition">
+                Create Support Ticket
+            </a>
+        </div>
 
-  </section>
+        <!-- Our Offices -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+            <h2 class="text-2xl font-semibold mb-4">Our Locations</h2>
+            <div class="mb-4">
+                <p class="font-bold">US Headquarters</p>
+                <p class="text-sm text-gray-600">742 Evergreen Terrace<br>Springfield, IL 62704</p>
+                <a href="#" class="text-sm text-blue-500 hover:underline">Map location</a>
+            </div>
+            <div>
+                <p class="font-bold">Europe Office</p>
+                <p class="text-sm text-gray-600">21 Oxford Street<br>London, UK W1D 2LF</p>
+                <a href="#" class="text-sm text-blue-500 hover:underline">Map location</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="bg-white py-16 px-4 md:px-20" id="contact">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">Contact Us</h2>
+
+            <form action="send-mail.php" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" name="name" id="name" required
+                        class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" name="email" id="email" required
+                        class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="md:col-span-2">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                    <textarea name="message" id="message" rows="5" required
+                        class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <div class="md:col-span-2 text-center">
+                    <button type="submit"
+                        class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
 
 
     <div id="footer-container"></div>
